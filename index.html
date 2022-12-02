@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tambourine Test</title>
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <!-- Navigation Bar -->
+      <nav class="navbar">
+        <div>
+          <img class="navbar__logo" src="./assets/img/svgs/Logo.svg" alt="" />
+        </div>
+        <ul>
+          <li class="navbar__item">Portland, Maine</li>
+        </ul>
+      </nav>
+      <!-- Section #1 -->
+      <section id="first__section">
+        <div class="first__section--slider">
+          <img
+            class="slider__item"
+            src="./assets/img/main_slider/Slider1.jpg"
+            alt=""
+          />
+          <img
+            class="slider__item"
+            src="./assets/img/main_slider/Slider2.jpg"
+            alt=""
+          />
+          <img
+            class="slider__item"
+            src="./assets/img/main_slider/Slider3.jpg"
+            alt=""
+          />
+        </div>
+        <div class="first__section--slider-arrows">
+          <div class="slider__arrow--left" onclick="slide('left')">
+            <img src="./assets/img/svgs/slider_arrow.svg" alt="" />
+          </div>
+          <div class="slider__arrow--right" onclick="slide('right')">
+            <img src="./assets/img/svgs/slider_arrow.svg" alt="" />
+          </div>
+        </div>
+        <div class="first__section--text">
+          <h1>History in the making.</h1>
+          <h2>Portland's newest boutique hotel.</h2>
+          <p>
+            Lorem ipsum dolor sit amet, donec luctus vel, augue duis. Voluptas
+            turpis, non vehicula sit turpis varius non ante, inventore
+            consectetur. Donec luctus vel eu, augue non. Non vehicle sit turpis
+            varius non ante, inventore consec. Lorem ipsum dolor sit amet, donec
+            luctus vel, augue duis. Voluptas turpis, non vehicula sit turpis
+            varius non ante, inventore consectetur. Donec luctus vel eu, augue
+            non. Non vehicle sit turpis varius non ante, inventore consec.Lorem
+            ipsum dolor sit amet, donec luctus vel, augue duis. Voluptas turpis,
+            non vehicula sit turpis varius non ante, inventore consectetur.
+            Donec luctus vel eu, augue non. Non vehicle sit turpis varius non
+            ante, inventore
+          </p>
+        </div>
+      </section>
+      <!-- Section #2 -->
+      <section id="second__section">
+        <div class="second__section--row">
+          <div class="second__section--text">
+            <span>Accommodations</span>
+            <h1>hollywood, meet industrial chic</h1>
+            <p>
+              Lorem ipsum dolor sit amet, donec luctus vel, augue duis. Voluptas
+              turpis, non vehicula sit turpis varius non ante, inventore
+              consectetur. Donec luctus vel eu, augue non. Non vehicle sit
+              turpis varius non ante, inventore consec.
+            </p>
+            <a href="#" class="btn-cta">View Rooms</a>
+          </div>
+          <img src="./assets/img/Room.jpg" data-aos="fade-up" data-aos-delay="1400" alt="" />
+        </div>
+      </section>
+      <!-- Section #3 -->
+      <section id="third__section">
+        <div class="third__section--container">
+          <span>this month’s most anticipated events</span>
+          <div>
+            <div class="events">
+              <div class="event" data-aos="fade-up" data-aos-delay="500">
+                <div class="event-date">
+                  <span>8</span>
+                  <p>NOV</p>
+                </div>
+              </div>
+              <div class="event" data-aos="fade-up" data-aos-delay="800">
+                <div class="event-date">
+                  <span>16</span>
+                  <p>NOV</p>
+                </div>
+              </div>
+              <div class="event" data-aos="fade-up" data-aos-delay="1100">
+                <div class="event-date">
+                  <span>2</span>
+                  <p>NOV</p>
+                </div>
+              </div>
+              <div class="event" data-aos="fade-up" data-aos-delay="1400">
+                <div class="event-date">
+                  <span>3</span>
+                  <p>NOV</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <span
+          >390 Congress St. (at Congress & Exchange Streets), Portland, Maine •
+          MAP ></span
+        >
+        <span>(207) 653.9990 • info@portlandpresshotel.com</span>
+      </div>
+    </footer>
+    <!-- Booking Form -->
+    <div id="booking__form">
+      <div class="booking__form--open">Book Now</div>
+      <div class="booking__form--container">
+        <div class="booking__form--close"><img src="./assets/img/svgs/arrow.svg" alt=""></div>
+        <h1>Book Now</h1>
+        <div class="form-control">
+          <label for="arrival-date">Arrival-Date</label>
+          <input name="arrival-date" type="date" />
+        </div>
+        <div class="form-control">
+          <label for="departure-date">Departure date</label>
+          <input name="departure-date" type="date" />
+        </div>
+        <!-- Flex Input -->
+        <div class="form-control-flex">
+          <div class="form-control">
+            <label for="guests">Guests</label>
+            <select name="" id="">
+              <option value="1">1 Adult</option>
+              <option value="1">2 Adult</option>
+              <option value="1">3 Adult</option>
+              <option value="1">4 Adult</option>
+            </select>
+          </div>
+          <div class="form-control">
+            <label for="guests" class="hidden">Test</label>
+            <select name="" id="">
+              <option value="1">1 Child</option>
+              <option value="1">2 Child</option>
+              <option value="1">3 Child</option>
+              <option value="1">4 Child</option>
+            </select>
+          </div>
+        </div>
+        <span class="message">GET READY! You are about to 
+          get our best price. Guaranteed.</span>
+          <br>
+          <div class="btn-container">
+            <span href="#" id="booking__form-send" class="btn-cta">Let's GO</span>
+          </div>
+          <div class="btn-container">
+            <a href="#" class="btn-book">or, book your group <img src="./assets/img/svgs/long_arrow.svg" alt=""></a>
+          </div>
+
+      </div>
+    </div>
+    <div id="backdrop"></div>
+
+    <!-- AOS js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Own Scripts -->
+    <script src="./assets/js/scripts.js"></script>
+  </body>
+</html>
