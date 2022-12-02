@@ -1,7 +1,6 @@
-# Prueba técnica Tambourine FrontEnd Developer
+# Dev Test Tambourine FrontEnd Developer
 
-This is a solution to the 
-
+This is my solution corresponding to the technical test proposed by the tambourine team, I finished it in an estimated time of 8h, thank you for your feedback!
 
 ## Table of contents
 
